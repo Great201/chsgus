@@ -10,7 +10,7 @@
  */
  
  
-$mailTo     = 'md.khandakarrafi@gmail.com';
+$mailTo     = 'admin@amosthomasministries.org';
 
 /**
  * Set the message that will be shown on success
