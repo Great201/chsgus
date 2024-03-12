@@ -407,8 +407,6 @@ Website: https://www.templatemilk.com
 		height: 100vh;
 		display: flex;
 		align-items: center;
-		padding: 0px 10% 0px 10%;
-		z-index: 9999;
 	}
 
 	.section-content{
@@ -959,15 +957,20 @@ Website: https://www.templatemilk.com
 		
 	}
 	.image-bg-8{
-		background: url(../img/code.jpg);}
+		background: url(../img/code.jpg);
+	}
 	
+	.image-bg-tr{
+		background: url(../img/bg-tr.jpg);
+	}
 	.image-bg, 
 	.image-bg-2, 
 	.image-bg-3,
 	.image-bg-4,
 	.image-bg-5,
 	.image-bg-6,
-	.image-bg-8{
+	.image-bg-8,
+	.image-bg-tr{
 		width: 100%;
 		background-size: cover;
 		display: block;
@@ -1227,6 +1230,9 @@ Website: https://www.templatemilk.com
 	
 	.head{
 		padding: 170px 0px 120px 0px;
+		height: 100vh;
+		display: flex;
+		align-items: center;
 	}
 	
 	.big-text-full h2{
