@@ -825,7 +825,7 @@ ul {
   background: url(../img/bg-tr.jpg);
 }
 .image-bg-ecc {
-  background: url(../img/bg-ecc2.png);
+  background: url("../img/bg-ecc2.png");
 }
 .image-bg,
 .image-bg-2,
