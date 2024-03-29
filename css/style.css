@@ -2563,12 +2563,8 @@ form textarea {
 
 .sd-1 {
   color: #db3236;
-  font-size: 31px;
-  line-height: 1.3em;
-  letter-spacing: 0.2px;
-  text-align: left;
 }
 
-.row{
-  margin-top: 20px !important;
-}
+/* .section-3 .list-group-item {
+  border: none;
+} */
