@@ -830,6 +830,9 @@ ul {
 .image-bg-power {
   background: url("../img/bg-power.jpg");
 }
+.image-bg-fb {
+  background: url("../img/bg-fb.jpg");
+}
 .image-bg,
 .image-bg-2,
 .image-bg-3,
@@ -839,7 +842,8 @@ ul {
 .image-bg-8,
 .image-bg-tr,
 .image-bg-ecc,
-.image-bg-power {
+.image-bg-power,
+.image-bg-fb {
   width: 100%;
   background-size: cover;
   display: block;
