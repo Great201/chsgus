@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment - CrystalHills Software Group</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/lightbox.css" />
+  <link rel="stylesheet" href="css/simpletextrotator.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://checkout.payaza.africa/js/v1/bundle.js"></script>
+</head>
+
+<body>
+
+
+
+  <script defer>
+    function handleButtonClick() {
+        const payazaCheckout = PayazaCheckout.setup({
+            merchant_key:  "PZ78-PKLIVE-D0328B15-9C8C-4345-9AC4-03245D98CFF7",
+            connection_mode: "Live", // Live || Test
+            checkout_amount: Number(10),
+            currency_code: "NGN", // NGN || USD
+            email_address: "chsg.operations@gmail.com",
+            first_name: 'OLUWASEUN',
+            last_name: 'ADEKANMI',
+            phone_number: "+23409022470700",
+            transaction_reference: "PL" + Math.floor(
+                (Math.random() * 10000000) + 1
+            ),
+        });
+  
+        // You can set the onClose and callback function as described below
+        function callback(callbackResponse) {
+            console.log('callbackResponse: ', callbackResponse)
+        }
+  
+        function onClose() {
+            console.log("closed")
+            window.location.href = 'https://webhook.site/ed6dd7-dfcf-44a3-8fa7-4cc1a9'
+        }
+  
+        payazaCheckout.setCallback(callback)
+        payazaCheckout.setOnClose(onClose)
+  
+        // Display popup
+        payazaCheckout.showPopup();
+    }//end function handleButtonClick
+  </script>
+
+
+  <!-- Loading Screen -->
+  <div id="loader-wrapper">
+    <!-- Loading Image -->
+    <div class="loader-img">
+      <img src="imageedit_4_7780170305.png" alt="" />
+    </div>
+    <!-- END Loading Image -->
+
+    <!-- Loading Screen Split -->
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    <!-- End Loading Screen Split -->
+  </div>
+  <!-- End Loading Screen -->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #191919; height: 51px">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="imageedit_4_7780170305.png" alt="" height="30" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/training2024">Training</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/paypal">Payment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/power">Power</a>
+        </li>">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- End Navigation -->
+
+  <!-- Header -->
+  <div id="header-pages" class="image-bg-pmt pattern-black">
+    <!-- Section Content -->
+    <div class="section-content">
+      <!-- Heading -->
+      <div class="big-text" data-uk-scrollspy="{cls:'uk-animation-fade', delay:20}">
+        <!-- Title -->
+        <h2 class="white t-left f-large ultrabold uppercase">Payments</h2>
+        <!-- Description -->
+        <!-- <h3 class="white t-left f-medium normal uppercase no-margin">Give your kids the unfair advantage.</h3> -->
+      </div>
+      <!-- End Heading -->
+    </div>
+    <!-- End Section Content -->
+  </div>
+  <!-- End Header -->
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Modal -->
+          <!-- <button type="button" class="btn btn-primary launch"> <i class="fa fa-rocket"></i> Pay Now </button> -->
+
+          <!-- Modal -->
+          <div class="" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false"> 
+            <div class="modal-dialog"> 
+                <div class="modal-content"> 
+                    <div class="modal-body">
+                        <div class="tabs mt-3"> 
+                            <div class="tab-content" id="myTabContent"> 
+                                <div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="visa-tab"> 
+                                    <div class="mt-4 mx-4"> 
+
+
+                                      <!-- Paypal -->
+                                      <!-- <script src="https://www.paypal.com/sdk/js?client-id=BAATTm6KeayDOD_zp27ft2RPcNSgmSvTMzzVS2ftwgQfp4JuoQohc7kCXjiKBnzAk8nqZcyvue-Bp7KeE8&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+                                      <div id="paypal-container-MC6L4ACE8DU6L"></div>
+                                      <script>
+                                        paypal.HostedButtons({
+                                          hostedButtonId: "MC6L4ACE8DU6L",
+                                        }).render("#paypal-container-MC6L4ACE8DU6L")
+                                      </script> -->
+
+
+                                        <button onclick="handleButtonClick()">Proceed!!!</button>
+                                        <div class="form mt-3"> 
+                                            <div class="inputbox"> 
+                                                <input type="text" name="name" class="form-control" required="required"> 
+                                                <span>Cardholder Name</span> 
+                                            </div> 
+                                            <div class="inputbox"> 
+                                                <input type="text" name="name" min="1" max="999" class="form-control" required="required"> 
+                                                <span>Card Number</span> 
+                                                <i class="fa fa-eye"></i> 
+                                            </div> 
+                                            <div class="d-flex flex-row"> 
+                                                <div class="inputbox"> 
+                                                    <input type="text" name="name" min="1" max="999" class="form-control" required="required"> 
+                                                    <span>Expiration Date</span> 
+                                                </div> 
+                                                <div class="inputbox"> 
+                                                    <input type="text" name="name" min="1" max="999" class="form-control" required="required"> 
+                                                    <span>CVV</span> 
+                                                </div> 
+                                            </div> 
+                                            <div class="px-5 pay"> 
+                                                <button class="btn btn-success btn-block">Add card</button> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <!-- <div class="tab-pane fade" id="paypal" role="tabpanel" aria-labelledby="paypal-tab"> 
+                                    <div class="px-5 mt-5"> 
+                                        <div class="inputbox"> 
+                                            <input type="text" name="name" class="form-control" required="required"> 
+                                            <span>Paypal Email Address</span> 
+                                        </div> 
+                                        <div class="pay px-5"> 
+                                            <button class="btn btn-primary btn-block">Add paypal</button> 
+                                        </div> 
+                                    </div> 
+                              </div>  -->
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer" class="dark-bg">
+    <!-- Section Content -->
+    <div class="section-content">
+      <!-- Row -->
+      <div class="row" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+        <!-- Column -->
+        <div class="col-md-12">
+          <!-- Footer Logo -->
+          <div class="footer-logo">
+            <a href="#header"><img src="chsg-logo.jpg" alt="" data-uk-smooth-scroll /></a>
+          </div>
+          <!-- End Footer Logo -->
+        </div>
+        <!-- End Column -->
+      </div>
+      <!-- End Row -->
+
+      <!-- Row -->
+      <div class="row" data-uk-scrollspy="{cls:'uk-animation-fade', delay:20}">
+        <!-- Column -->
+        <div class="col-md-12">
+          <!-- Footer Social -->
+          <ul class="footer-social">
+            <!-- Links -->
+
+            <li>
+              <a href="https://twitter.com/ChsgInc"><i class="fa fa-twitter white" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+              <a href="https://web.facebook.com/CHSG-Inc-USA-105939237938067"><i class="fa fa-facebook white"
+                  aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fa fa-linkedin white" aria-hidden="true"></i></a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/chsginc/"><i class="fa fa-instagram white" aria-hidden="true"></i></a>
+            </li>
+            <!-- End Links -->
+          </ul>
+          <!-- End Footer Social -->
+
+          <!-- Separator -->
+          <div class="separator-center"></div>
+          <!-- End Separator -->
+        </div>
+        <!-- End Column -->
+      </div>
+      <!-- End Row -->
+
+      <!-- Row -->
+      <div class="row">
+        <!-- Column -->
+        <div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:40}">
+          <!-- Footer Details -->
+          <div class="footer-details no-padding-top">
+            <!-- Title -->
+            <p class="white f-small uppercase bold">Phone</p>
+
+            <!-- Number -->
+            <p class="white f-small lato">
+              <a href="#" class="gray1"> +2349022470700</a>
+            </p>
+          </div>
+          <!-- End Footer Details -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Column -->
+        <div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:40}">
+          <!-- Footer Details -->
+          <div class="footer-details">
+            <!-- Title -->
+            <p class="white f-small uppercase bold">EIN</p>
+
+            <!-- Phone -->
+            <p class="white f-small lato">
+              <a href="#" class="gray1">275415446</a>
+            </p>
+          </div>
+          <!-- End Footer Details -->
+        </div>
+        <!-- End Column -->
+
+        <!-- Column -->
+        <div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:40}">
+          <!-- Footer Details -->
+          <div class="footer-details">
+            <!-- Title -->
+            <p class="white f-small uppercase bold">Addresses</p>
+
+            <!-- Phone -->
+            <p class="white f-small lato">
+              <a href="#" class="gray1">
+                <p>
+                  North American Headquarters: 1661 Windsor Chase Court, <br />Lawrenceville GA 30043 United
+                  States
+                </p>
+                <p>West African Address 1: 10 Quarry Road, Abeokuta Behind Kidot O Halls</p>
+                <p>West African Address 2: 31B Olabanji Olajide, Off Rahman Adeboyejo, Lekki Phase 1</p>
+              </a>
+            </p>
+          </div>
+          <!-- End Footer Details -->
+        </div>
+        <!-- End Column -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Section Content -->
+  </div>
+  <!-- End Footer -->
+
+  <!-- JavaScript Files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/jquery.simple-text-rotator.min.js"></script>
+  <!-- Your Custom Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

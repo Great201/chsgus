@@ -833,6 +833,9 @@ ul {
 .image-bg-fb {
   background: url("../img/bg-fb.jpg");
 }
+.image-bg-pmt {
+  background: url("../img/bg-pmt.jpg");
+}
 .image-bg,
 .image-bg-2,
 .image-bg-3,
@@ -843,7 +846,8 @@ ul {
 .image-bg-tr,
 .image-bg-ecc,
 .image-bg-power,
-.image-bg-fb {
+.image-bg-fb,
+.image-bg-pmt {
   width: 100%;
   background-size: cover;
   display: block;
